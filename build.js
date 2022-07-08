@@ -65,7 +65,21 @@ var releases = {
 			'default/handleEvent.js',
 		],
 		postProcessing: [ 'wheel/build.json', 'snap/build.json', 'keys/build.json', 'infinite/build.json', 'probe/build.json' ]
-	}
+	},
+
+	'pull-refresh': {
+		files: [
+			'indicator/_initIndicators.js',
+			'wheel/wheel.js',
+			'snap/snap.js',
+			'keys/keys.js',
+			'default/_animate.js',
+			'pullRefresh/pullRefresh.js',
+			'pullRefresh/handleEvent.js',
+			'indicator/indicator.js'
+		],
+		postProcessing: [ 'indicator/build.json', 'wheel/build.json', 'snap/build.json', 'keys/build.json', 'pullRefresh/build.json' ]
+	},
 };
 
 var args = process.argv.slice(2);
